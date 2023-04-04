@@ -11,17 +11,17 @@ function ShowDataDetails(_props) {
 
   
 
-  useEffect(() => {
-    
+  useEffect(() => {   
     
     axios
-      .get(`http://localhost:5000/api/records/${id}/`)
+      .get(`http://localhost:5000/api/records/${id}`)
       .then((res) => {
         setRecord(res.data);
       })
       .catch((err) => {
         console.log('Error from ShowDataDetails');
-        console.error(err)
+        console.log('The error is -> ')
+        console.log(err)
       });
   }, [id]);
 
@@ -33,7 +33,8 @@ function ShowDataDetails(_props) {
       })
       .catch((err) => {
         console.log('Error form ShowDataDetails_deleteClick');
-        console.error(err)
+        console.log('The error is -> ')
+        console.log(err)
       });
   };
 
@@ -87,7 +88,7 @@ function ShowDataDetails(_props) {
         <div className='row'>
           <div className='col-md-10 m-auto'>
             <br /> <br />
-            <Link to='/' className='btn btn-outline-warning float-left'>
+            <Link to='/show-list/:id' className='btn btn-outline-light float-left'>
               Show Book List
             </Link>
           </div>
@@ -101,7 +102,7 @@ function ShowDataDetails(_props) {
           <div className='col-md-6 m-auto'>
             <button
               type='button'
-              className='btn btn-outline-light btn-lg btn-block'
+              className='btn btn-outline-danger btn-lg btn-block'
               onClick={() => {
                 onDeleteClick(record._id);
               }}
@@ -112,7 +113,7 @@ function ShowDataDetails(_props) {
           <div className='col-md-6 m-auto'>
             <Link
               to={`/edit-book/${record._id}`}
-              className='btn btn-outline-dark btn-lg btn-block'
+              className='btn btn-outline-primary btn-lg btn-block'
             >
               Edit Book
             </Link>

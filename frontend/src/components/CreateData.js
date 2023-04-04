@@ -27,7 +27,7 @@ const CreateData = (props) => {
         e.preventDefault();
 
         axios
-        .post('/api/records', record)
+        .post('http://localhost:5000/api/records', record)
          .then((res) => {
                 setRecord({
                     firstName: '',

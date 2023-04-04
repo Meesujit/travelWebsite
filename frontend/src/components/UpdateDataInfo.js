@@ -40,7 +40,7 @@ function UpdateDataInfo() {
 
     
     const onChange = (e) => {
-        setRecord({ ...recod, [e.target.name]: e.target.value});
+        setRecord({ ...record, [e.target.name]: e.target.value});
     };
     
     const onSubmit =(e) => {

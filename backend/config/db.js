@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const db = "mongodb+srv://travelWebsiteBackend:R2ADdUSrB5JYfoE0@cluster0.0agfnzf.mongodb.net/data?retryWrites=true&w=majority"; 
+const db = "mongodb+srv://sujitgda997:FGem9HyY4uEeTq9H@cluster0.idyg4on.mongodb.net/mydata?retryWrites=true&w=majority"; 
 
 const connectDB = async() =>{
     try{

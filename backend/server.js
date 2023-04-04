@@ -1,6 +1,6 @@
 const express = require("express")
 const connectDB = require("./config/db")
-const records = require("./routes/api/records")
+const routes = require("./routes/api/records")
 const cors = require("cors")
 
 const app = express()
@@ -19,7 +19,7 @@ app.use(express.json({
 }))
 
 // app.get('/', (req,res) => res.send('hello world'));
-app.use("/api/records", records)
+app.use("/api/records", routes)
 
 
 require("dotenv").config({path:"./config.env" }) 
