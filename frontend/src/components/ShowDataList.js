@@ -8,7 +8,7 @@ function ShowDataList() {
 
     useEffect(() => {
         axios 
-        .get(`http://localhost:5000/api/records`)
+        .get(`https://5000-meesujit-travelo-tabxmqtuw7m.ws-us93.gitpod.io/api/records`)
         .then((res)=> {
             setRecords(res.data)
         })

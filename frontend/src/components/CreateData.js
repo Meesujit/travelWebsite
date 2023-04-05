@@ -27,7 +27,7 @@ const CreateData = (props) => {
         e.preventDefault();
 
         axios
-        .post('http://localhost:5000/api/records', record)
+        .post('https://5000-meesujit-travelo-tabxmqtuw7m.ws-us93.gitpod.io/api/records', record)
          .then((res) => {
                 setRecord({
                     firstName: '',
@@ -56,7 +56,7 @@ const CreateData = (props) => {
         <div className='row'>
           <div className='col-md-8 m-auto'>
             <br />
-            <Link to='/show-list/:id' className='btn btn-outline-light float-left'>
+            <Link to='/show-list' className='btn btn-outline-light float-left'>
               Show Entry Data
             </Link>
 

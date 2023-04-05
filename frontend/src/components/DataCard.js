@@ -25,8 +25,7 @@ const DataCard = (props) => {
         <p>{record.address} </p>
         <p>{record.beginDate} </p>
         <h3>{record.arivelDate} </h3>
-        <h3>{record.price} </h3>
-        
+        <h3>{record.price} </h3>        
       </div>
     </div>  
   )

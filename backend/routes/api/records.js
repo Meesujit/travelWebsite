@@ -4,28 +4,27 @@ const router = express.Router()
 
 const Record = require("../../models/Record")
 
-router.get('/test', (req, res) => res.send('book route testing!'));
+router.get('/test', (req, res) => res.send('record route testing!'));
 
 
 router.get("/",(req,res)=>{
     Record.find()
     .then((records) => res.json(records))
-    .catch(err => res.status(404).json({nodatafound: 'No data found'}))
+    .catch((err) => res.status(404).json({nodatafound: 'No data found'}))
 })
 
 
 // data not found
-router.get('/:d', (req, res) => {
-    Record.findById(req.params.id)
-        .then((record) => res.json(record))
-        .catch(err => res.status(404).json({ nodatafound: 'No data found'}));
+router.get('/:id', (req, res) => {
+  Record.findById(req.params.id)
+    .then((record) => res.json(record))
+    .catch((err) => res.status(404).json({ nobookfound: 'No Book found' }));
 });
-
 // adding data
 router.post('/', (req, res) => {
     Record.create(req.body)
     .then((record) => res.json({msg: 'Data added successfully'}))
-    .catch(err => res.status(404).json({ error: 'Unable to add this data'}))
+    .catch((err) => res.status(404).json({ error: 'Unable to add this data'}))
 })
 
 
@@ -33,7 +32,7 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
     Record.findByIdAndUpdate(req.params.id, req.body)
       .then((record) => res.json({ msg: 'Updated successfully' }))
-      .catch(err =>
+      .catch((err) =>
         res.status(400).json({ error: 'Unable to update the Database' })
       );
   });
@@ -43,7 +42,7 @@ router.put('/:id', (req, res) => {
   router.delete('/:id', (req, res) => {
     Record.findByIdAndRemove(req.params.id, req.body)
       .then((record) => res.json({ mgs: 'data entry deleted successfully' }))
-      .catch(err => res.status(404).json({ error: 'No such data' }));
+      .catch((err) => res.status(404).json({ error: 'No such data' }));
   });
   
 module.exports = router

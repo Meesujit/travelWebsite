@@ -5,13 +5,13 @@ import '../App.css'
 
 function UpdateDataInfo() {
     const [record, setRecord] = useState({
-        firstName: '',
-        lastName: '',
-        city: '',
-        address: '',
-        beginDate: '',
-        arivelDate: '',
-        price: '',
+      firstName: '',
+      lastName: '',
+      city: '',
+      address: '',                    
+      beginDate: '',
+      arivelDate: '',
+      price: '',
     });
 
     const { id } = useParams();
@@ -19,7 +19,7 @@ function UpdateDataInfo() {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:5000/api/records/${id}`)
+            .get(`https://5000-meesujit-travelo-tabxmqtuw7m.ws-us93.gitpod.io/api/records/${id}`)
              .then((res) => {
                 setRecord({
                     firstName: res.data.firstName,
@@ -58,13 +58,14 @@ function UpdateDataInfo() {
     };
 
     axios
-        .put(`http://localhost:5000/api/records/${id}`, data)
+        .put(`https://5000-meesujit-travelo-tabxmqtuw7m.ws-us93.gitpod.io/api/records/${id}`, data)
         .then((res) => {
             navigate(`/show-data/${id}`);
         })
         .catch((err) => {
             console.log('Error in UpdateDataInfo PUT request -> ');
-            console.log(err)
+            console.log('this is error->')
+            console.error(err)
         });
 
     };
@@ -75,7 +76,7 @@ function UpdateDataInfo() {
         <div className='row'>
           <div className='col-md-8 m-auto'>
             <br />
-            <Link to='/' className='btn btn-outline-warning float-left'>
+            <Link to='/show-list' className='btn btn-outline-warning float-left'>
               Show Data List
             </Link>
           </div>
