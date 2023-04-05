@@ -27,7 +27,7 @@ const CreateData = (props) => {
         e.preventDefault();
 
         axios
-        .post('https://5000-meesujit-travelo-tabxmqtuw7m.ws-us93.gitpod.io/api/records', record)
+        .post('/api/records', record)
          .then((res) => {
                 setRecord({
                     firstName: '',

@@ -11,7 +11,7 @@ function ShowDataDetails(props) {
 
   useEffect(() => {
     axios
-      .get(`https://5000-meesujit-travelo-tabxmqtuw7m.ws-us93.gitpod.io/api/records/${id}`)
+      .get(`/api/records/${id}`)
       .then((res) => {
         setRecord(res.data);
       })
@@ -24,7 +24,7 @@ function ShowDataDetails(props) {
 
   const onDeleteClick = (id) => {
     axios
-      .delete(`https://5000-meesujit-travelo-tabxmqtuw7m.ws-us93.gitpod.io/api/records/${id}`)
+      .delete(`/api/records/${id}`)
       .then((res) => {
         navigate('/');
       })

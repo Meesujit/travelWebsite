@@ -19,7 +19,7 @@ function UpdateDataInfo() {
 
     useEffect(() => {
         axios
-            .get(`https://5000-meesujit-travelo-tabxmqtuw7m.ws-us93.gitpod.io/api/records/${id}`)
+            .get(`/api/records/${id}`)
              .then((res) => {
                 setRecord({
                     firstName: res.data.firstName,
@@ -58,7 +58,7 @@ function UpdateDataInfo() {
     };
 
     axios
-        .put(`https://5000-meesujit-travelo-tabxmqtuw7m.ws-us93.gitpod.io/api/records/${id}`, data)
+        .put(`/api/records/${id}`, data)
         .then((res) => {
             navigate(`/show-data/${id}`);
         })
