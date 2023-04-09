@@ -52,24 +52,18 @@ const Home = () => {
        ------------------------------ */}
 
     <div className="hero-section">
-      <div className="hero-container">
-        <div className="hero-row">
+      <div className="container">
+        <div className="row ml-3">
+          {/* content column */}
+          <div className="col m-auto col-md-6">
+            <h3>Explore the world together</h3>
+            <p>Find awesome flights, hotel, tour, car and packages</p>
+            <Link type="button" className="btn btn-primary m-auto hero-btn" to='/create-user'>Book Now</Link>
 
-          {/* this is for data part  */}
-          <div className="hero-col">
-            <h1>Happy Journey</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laborum, labore quis eum ad magni voluptatibus ullam autem sed eligendi, modi temporibus possimus quo ut qui. A explicabo maiores dolores!</p>
-            
-            <Link to='./components/CreateData' className='hero-btn button'>Book Now</Link>
           </div>
-
-          {/* this is for image part */}
-          <div className="hero-col">
-            <picture>
-              <img src="./image/romantic-getaway-animate.svg" alt="travel" width={550}/>
-
-             
-            </picture>
+          {/* image column */}
+          <div className="col m-auto">
+            <img src="./image/romantic-getaway-animate.svg" alt="" />
 
           </div>
         </div>
@@ -82,198 +76,158 @@ const Home = () => {
         Destination section
         -------------------------------------  */}
 
-
-    <div className="destination-section">
-      <div className='heading'>
-      <h1 className='text-center'>Destination</h1>
-      </div>
-      <div className="container ">
-        <div className="row mt-5">
-          <div className="col card mr-3">
-            <img className="card-img-top" src="./image/paris-animate.svg" alt=" " height={200} />
-            <div className="card-body">
-              <h5 className="card-title">Paris</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <Link to='' className="btn btn-primary">Go somewhere</Link>
-            </div>
-          </div>
-
-          <div className="col card mr-3">
-            <img className="card-img-top" src="./image/london-animate.svg" alt=" " height={200} />
-            <div className="card-body">
-              <h5 className="card-title">London</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <Link to='' className="btn btn-primary">Go somewhere</Link>
-            </div>
-          </div>
-
-          <div className="col card mr-3">
-            <img className="card-img-top" src="./image/japan-animate.svg" alt=" " height={200} />
-            <div className="card-body">
-              <h5 className="card-title">Japan</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <Link to='' className="btn btn-primary">Go somewhere</Link>
-            </div>
-          </div>
-
-          <div className="col card">
-            <img className="card-img-top" src="./image/new-york-animate.svg" alt=" " height={200} />
-            <div className="card-body">
-              <h5 className="card-title">New York</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <Link to='' className="btn btn-primary">Go somewhere</Link>
-            </div>
-          </div>
-        </div>
-
-        
-      </div> 
-
-           
+    <div className="destination-card-section">
       <div className="container">
-        <div className="row mt-5 mb-5">
-          <div className="col card mr-3">
-            <img className="card-img-top" src="./image/paris-animate.svg" alt=" " height={200} />
-            <div className="card-body">
-              <h5 className="card-title">Paris</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <Link to='' className="btn btn-primary">Go somewhere</Link>
+
+        <div> <h2 className='text-center pt-5 mr-5'>Destination </h2> </div>
+        <div className="row m-auto">
+          <div className="col text-center mt-5 ">
+            <div className="card" style={{ width: "18rem" }}>
+              <img src="./image/japan-animate.svg" alt="" class="card-img-top" />
+              <div className="card-body">
+                <h4 className="card-title">Tokyo</h4>
+                <p className="card-text"><span className='text-primary'> 4.5/5 Excellent </span> (<span className='text-danger'>1214</span> reviews)</p>
+                <p className="card-text">$99.00 Price</p>
+              </div>
             </div>
           </div>
 
-          <div className="col card mr-3">
-            <img className="card-img-top" src="./image/london-animate.svg" alt=" " height={200} />
-            <div className="card-body">
-              <h5 className="card-title">London</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <Link to='' className="btn btn-primary">Go somewhere</Link>
+          <div className="col text-center mt-5">
+            <div className="card " style={{ width: "18rem" }}>
+              <img src="./image/london-animate.svg" alt="" class="card-img-top" height={290} />
+              <div className="card-body">
+                <h4 className="card-title">London</h4>
+                <p className="card-text"><span className='text-primary'> 4.5/5 Excellent </span> (<span className='text-danger'>1214</span> reviews)</p>
+                <p className="card-text">$99.00 Price</p>
+              </div>
             </div>
           </div>
 
-          <div className="col card mr-3">
-            <img className="card-img-top" src="./image/japan-animate.svg" alt=" " height={200} />
-            <div className="card-body">
-              <h5 className="card-title">Japan</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <Link to='' className="btn btn-primary">Go somewhere</Link>
+          <div className="col text-center mt-5">
+            <div className="card " style={{ width: "18rem" }}>
+              <img src="./image/paris-animate.svg" alt="" class="card-img-top" />
+              <div className="card-body">
+                <h4 className="card-title">Paris</h4>
+                <p className="card-text"><span className='text-primary'> 4.5/5 Excellent </span> (<span className='text-danger'>1214</span> reviews)</p>
+                <p className="card-text">$99.00 Price</p>
+              </div>
             </div>
           </div>
 
-          <div className="col card">
-            <img className="card-img-top" src="./image/new-york-animate.svg" alt=" " height={200} />
-            <div className="card-body">
-              <h5 className="card-title">New York</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <Link to='' className="btn btn-primary">Go somewhere</Link>
+          <div className="col text-center mt-5">
+            <div className="card " style={{ width: "18rem" }}>
+              <img src="./image/new-york-animate.svg" alt="" class="card-img-top" height={289} />
+              <div className="card-body">
+                <h4 className="card-title">New York</h4>
+                <p className="card-text"><span className='text-primary'> 4.5/5 Excellent </span> (<span className='text-danger'>1214</span> reviews)</p>
+                <p className="card-text">$99.00 Price</p>
+              </div>
             </div>
+          </div>
+
+          <div className="col text-center mt-5">
+            <div className="card " style={{ width: "18rem" }}>
+              <img src="./image/japan-animate.svg" alt="" class="card-img-top" />
+              <div className="card-body">
+                <h4 className="card-title">Tokyo</h4>
+                <p className="card-text"><span className='text-primary'> 4.5/5 Excellent</span> (<span className='text-danger'>1214</span> reviews)</p>
+                <p className="card-text">$99.00 Price</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col text-center mt-5">
+            <div className="card " style={{ width: "18rem" }}>
+              <img src="./image/japan-animate.svg" alt="" class="card-img-top" />
+              <div className="card-body">
+                <h4 className="card-title">Tokyo</h4>
+                <p className="card-text"><span className='text-primary'> 4.5/5 Excellent </span> (<span className='text-danger'>1214</span> reviews)</p>
+                <p className="card-text">$99.00 Price</p>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+        <div className="content mt-5 text-center pb-4">
+          <div className="text">
+            <h1> Best Deals Avaliable Here</h1>
           </div>
         </div>
 
-        
-      </div> 
-
+      </div>
     </div>
 
 
-  {/*---------------------------------------
+
+
+
+    {/*---------------------------------------
    Travel Trip  
    ------------------------------------------*/}
 
-   <div className="trip-section">
-    <div className="container">
-      
-      <div className="row mt-5">
-        <div className="col mr-5">
-        <img className="card-img-top rounded-circle " src="./image/train-animate.svg" alt=" " height={200} />
-        </div>
-        <div className="col mr-5">
-        <img className="card-img-top rounded-circle " src="./image/flying-around-animate.svg" alt=" " height={200} />
-        </div>
-        <div className="col mr-5">
-        <img className="card-img-top rounded-circle" src="./image/gps-navigator-animate.svg" alt=" " height={200} />
-        </div>
-        <div className="col">
-        <img className="card-img-top rounded-circle" src="./image/hotel-booking-animate.svg" alt=" " height={200} />
+    <div className="trip-section">
+      <div className="container">
+
+        <div className="row ">
+          <div className="col mr-5">
+            <img className="card-img-top rounded-circle " src="./image/train-animate.svg" alt=" " height={200} />
+          </div>
+          <div className="col mr-5">
+            <img className="card-img-top rounded-circle " src="./image/flying-around-animate.svg" alt=" " height={200} />
+          </div>
+          <div className="col mr-5">
+            <img className="card-img-top rounded-circle" src="./image/gps-navigator-animate.svg" alt=" " height={200} />
+          </div>
+          <div className="col">
+            <img className="card-img-top rounded-circle" src="./image/hotel-booking-animate.svg" alt=" " height={200} />
+          </div>
         </div>
       </div>
     </div>
-   </div>
 
 
 
 
-   {/*----------------------------
+    {/*----------------------------
     footer section
     ------------------------------   */}
 
     <div className="footer-section">
-      <div className="container m-auto">
-        <div className="row">
-          <div className="col">
-            <h3>Contact us</h3>
-          <ul className="socials">
-          <li> <Link><i class="fa-brands fa-instagram fa-beat"></i></Link> </li>
-          <li> <Link><i class="fa-brands fa-facebook fa-beat"></i></Link> </li>
-          <li> <Link><i class="fa-brands fa-twitter fa-beat"></i></Link> </li>
-          <li> <Link><i class="fa-brands fa-linkedin-in fa-beat"></i></Link> </li>
-        </ul>
-          </div>          
+      <div className="footer-container m-auto">
+        <div className="row ml-5">
+          <div className="col mb-3">
+              <h3 className='pt-4'>Connect us</h3>            
+              <Link><i class="fa-brands fa-instagram fa-beat mr-3 ml-3 f-2 text-danger pt-3 "></i></Link> <br />
+              <Link><i class="fa-brands fa-facebook fa-beat mr-3 ml-3 mt-2 text-primary"></i></Link> <br />
+              <Link><i class="fa-brands fa-twitter fa-beat mr-3 ml-3 mt-2 text-info"></i></Link> <br />
+              <Link><i class="fa-brands fa-linkedin-in fa-beat ml-3 mt-2 text-"></i></Link>           
+          </div>
+
+          <div className="col mb-3">
+              <h3 className='pt-4'>Services</h3>            
+              <h6 className='ml-4 pt-3'>lorem</h6>
+              <br />
+              <h6 className='ml-4'>lorem</h6>
+              <br />
+              <h6 className='ml-4'>lorem</h6>
+              <br />
+
+          </div>
+
+          <div className="col mb-3">
+              <h3 className='pt-4'>Contact</h3>            
+              <h6 className='ml-4 pt-3'>Gmail 📧</h6>
+              <br />
+              <h6 className='ml-4'>Phone 📲</h6>
+              <br />
+              <h6 className='ml-4'>Map 🗺️</h6>
+              <br />           
+          </div>
         </div>
       </div>
-   
+
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    {/* -------------------------------------
- footer section 
- -----------------------------------------*/}
-    {/* <footer>
-      <div className="footer-content">
-        <h3>Footer Section</h3>
-        <p>Footer section - source code. </p>
-        <ul className="socials">
-          <li> <Link><i class="fa-brands fa-instagram fa-beat"></i></Link> </li>
-          <li> <Link><i class="fa-brands fa-facebook fa-beat"></i></Link> </li>
-          <li> <Link><i class="fa-brands fa-twitter fa-beat"></i></Link> </li>
-          <li> <Link><i class="fa-brands fa-linkedin-in fa-beat"></i></Link> </li>
-        </ul>
-      </div>
-      <div className="footer-bottom">
-        <p>copyright &copy;2021 <Link> <span>footer bottom</span> </Link>  </p>
-      </div>
-      <div className="footer-menu">
-        <ul className="f-menu">
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to='/about'>About</Link>
-          </li>
-          <li>
-            <Link to='/service'>Services</Link>
-          </li>
-          <li>
-            <Link to='/contact'>Contact</Link>
-          </li>
-
-        </ul>
-      </div>
-
-     </footer> */}
-
-
-
-
   </>
 
 
