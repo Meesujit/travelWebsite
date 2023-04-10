@@ -76,7 +76,7 @@ function UpdateDataInfo() {
         <div className='row'>
           <div className='col-md-8 m-auto'>
             <br />
-            <Link to='/show-list' className='btn btn-outline-warning float-left'>
+            <Link to='/show-list' className='btn btn-outline-light float-left'>
               Show Data List
             </Link>
           </div>
@@ -181,7 +181,7 @@ function UpdateDataInfo() {
 
             <button
               type='submit'
-              className='btn btn-outline-info btn-lg btn-block'
+              className='btn btn-outline-light btn-lg btn-block'
             >
               Update Data
             </button>

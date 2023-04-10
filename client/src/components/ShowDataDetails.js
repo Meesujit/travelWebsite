@@ -85,7 +85,7 @@ function ShowDataDetails(props) {
         <div className='row'>
           <div className='col-md-10 m-auto'>
             <br /> <br />
-            <Link to='/show-list' className='btn btn-outline-warning float-left'>
+            <Link to='/show-list' className='btn btn-outline-light float-left'>
               Show Data List
             </Link>
           </div>
@@ -110,7 +110,7 @@ function ShowDataDetails(props) {
           <div className='col-md-4 m-auto'>
             <Link
               to={`/edit-data/${record._id}`}
-              className='btn btn-outline-info btn-lg btn-block'
+              className='btn btn-outline-light btn-lg btn-block'
             >
               Edit Book
             </Link>
