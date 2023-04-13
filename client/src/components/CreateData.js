@@ -96,21 +96,13 @@ const CreateData = (props) => {
 
               <div className='form-group'>
 
-              {/* <div className="col-md-4 mb-3">
-                  <label for="Depature_city" className="text-white">Depature City</label>
-                  <select className="form-control" id="Depature_City" name="city">
-                    <option selected>select</option>
-                    <option value={record.city} onChange={onChange}>city1</option>
-                    <option value={record.city} onChange={onChange}>city2</option>
-                    <option value={record.city} onChange={onChange}>city3</option>
-                  </select>
-                </div> */}
+              
 
 
 
                 <input
                   type='text'
-                  placeholder='City'
+                  placeholder='Depature City'
                   name='city'
                   className='form-control'
                   value={record.city}
@@ -121,7 +113,7 @@ const CreateData = (props) => {
               <div className='form-group'>
                 <input
                   type='text'
-                  placeholder='Address'
+                  placeholder='Destination City'
                   name='address'
                   className='form-control'
                   value={record.address}

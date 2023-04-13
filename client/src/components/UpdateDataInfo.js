@@ -115,7 +115,7 @@ function UpdateDataInfo() {
             <br />
 
             <div className='form-group'>
-              <label htmlFor='city'>City</label>
+              <label htmlFor='city'>Depature City</label>
               <input
                 type='text'
                 placeholder='Enter City'
@@ -128,7 +128,7 @@ function UpdateDataInfo() {
             <br />
 
             <div className='form-group'>
-              <label htmlFor='address'>Address</label>
+              <label htmlFor='address'>Destination City</label>
               <textarea
                 type='text'
                 placeholder='Enter the Address'

@@ -273,18 +273,21 @@ background-size: cover;
 
 .desc h2 {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 
 .desc h3, p {
-  font-weight: 300;
+  font-weight: 600;
 }
 
-.desc h3  {
-  color: #0b0c0c;
+.desc h3, h2 {
+  color: #ffff;
   font-size: 1em;
   padding: 10px 0 10px 0;
+  text-decoration: none;
+  font-weight: 600;
+
 }
 
 

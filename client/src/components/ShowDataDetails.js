@@ -51,12 +51,12 @@ function ShowDataDetails(props) {
           </tr>
           <tr>
             <th scope='row'>3</th>
-            <td>city</td>
+            <td>Depature city</td>
             <td>{record.city}</td>
           </tr>
           <tr>
             <th scope='row'>4</th>
-            <td>address</td>
+            <td>Destination City</td>
             <td>{record.address}</td>
           </tr>
           <tr>

@@ -19,7 +19,7 @@ function ShowDataList() {
         })
     },[])
 
-    const recordList = 
+    const recordList =
         records.length === 0
         ? 'there is no data record! '
         : records.map((record, k) => <DataCard record={record} key={k} />)
@@ -41,11 +41,9 @@ function ShowDataList() {
                     <hr />
                 </div>
             </div>
-            <div className="list">{recordList} </div>
+            <div className="list">{recordList}</div>
         </div>
     </div>
-    
   )
 }
-
 export default ShowDataList

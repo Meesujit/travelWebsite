@@ -16,7 +16,7 @@ const DataCard = (props) => {
       />
       <div className='desc'>
         <h2>
-          <Link to={ `/show-data/${record._id}` }>
+          <Link to={ `/show-data/${record._id}` } >
             {record.city} 
           </Link>
         </h2> 
